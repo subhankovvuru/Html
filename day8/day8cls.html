@@ -1,0 +1,31 @@
+~<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./submit.txt">
+        <center>
+        <div id="name">
+            <label for="f_name">Full name:--</label>
+            <input type="text" id="f_name" required pattern="[a-zA-z]{3,25}" title="take only alaphabets not numbers"/>
+        </div><br><br>
+        <div id="email">
+            <label for="email">email:--</label>
+            <input type="email" id="email" required  required pattern="[a-z0-9]+@[a-z]+.[a-z]{2,}" title="place take the special character and  symbol"/>
+            </div><br><br>
+        <div id="password">
+            <label for="password">password:--</label>   
+            <input type="password" id="password" required pattern="(?=.*[A-Z]{1})+(?=.*[a-z]{5})+(?=.*[0-9])+(?=.*[@!#$%^&]{1}{0-9})"title="take alphhabets and number and special character"/>
+            
+            </div><br><br>
+        <div id="conform password">
+            <label for="password">conform password:--</label>
+            <input type="password" id="confirm" required pattern="(?=.*[A-Z]{1})+(?=.*[a-z]{5})+(?=.*[0-9])+(?=.*[@!#$%^&]{1}{0-9})"title="take alphhabets and number and special character"/>
+            <button type="submit">submit</button><br><br>
+        </center>
+    </form>
+</body>
+</html>
